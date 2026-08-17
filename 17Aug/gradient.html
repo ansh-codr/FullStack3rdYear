@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+            margin-top: 10px;
+        }
+
+        .box1 {
+            /* background: linear-gradient(to right, #ff7b00, #ffb703, #f94144); */
+            /* background: linear-gradient(in hsl longer hue, blue, red), */
+            /* background: linear-gradient(in oklab, blue, red), */
+            /* background:linear-gradient(.25turn, red, 10%, blue) */
+            background: linear-gradient(0.5turn,
+                    red 0% 50%,
+                    blue 65% 70%,
+                    green 85% 100%);
+        }
+
+        .box2 {
+            /* background: radial-gradient(circle, #90be6d, #3a86ff, #1b1b1b), */
+            /* background: radial-gradient(circle at center, red 0, blue, green 100%), */
+            background: radial-gradient(circle at center in hsl longer hue, red 0, rgb(86, 191, 33), green 100%)
+        }
+
+        .box3 {
+            /* background: conic-gradient(from 90deg, #ff006e, #8338ec, #3a86ff, #06d6a0, #ff006e); */
+            /* background: conic-gradient(from 90deg at 0 0, blue, red), */
+            /* background: conic-gradient(in hsl longer hue, red, blue, green, red); */
+           background: conic-gradient(white 0.09turn, #bbbbbb 0.09turn, #bbbbbb 0.27turn, #666666 0.27turn, #666666 0.54turn, black 0.54turn);
+           padding: 35px;
+           margin: 40px;
+           border: 3px solid aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Linear Gradient</p>
+        <div class="box1"></div>
+    </div>
+
+    <div class="container">
+        <p>Radial Gradient</p>
+        <div class="box2"></div>
+    </div>
+
+    <div class="container">
+        <p>Conic Gradient</p>
+        <div class="box3"></div>
+    </div>
+    </div>
+</body>
+
+</html>
