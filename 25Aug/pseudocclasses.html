@@ -15,6 +15,12 @@
             border-radius: 70px;
 
         }
+        input:checked{
+            accent-color: red;
+        }
+        input:not(:checked){
+            box-shadow: 0px 0px 5px grey;
+        }
         button:focus{
             background-color: gray;
             box-shadow: 3px 3px 5px red;
@@ -28,6 +34,7 @@
     </style>
 </head>
 <body>
+    <input type="checkbox" checked>
     <button>Click Me!</button>
     <a href="#link">Link</a>
 </body>
