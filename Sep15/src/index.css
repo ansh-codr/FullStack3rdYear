@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
 @theme{
-    --color-seed: #dedede
+    --color-seed: #dedede;
+}
+
+.heading{
+    @apply text-3xl font-bold text-slate-800;
+}
+
+.inline-badge {
+    @apply inline-block rounded-full bg-seed px-3 py-1 text-sm font-medium text-slate-700;
 }
