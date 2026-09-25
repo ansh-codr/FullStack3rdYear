@@ -16,7 +16,7 @@
         <li><a href="#">Deals</a></li>
         <li><a href="#">About</a></li>
     </ul>
-    <a href="#" class="cart-btn">Cart (3)</a>
+    <a href="#" class="cart-btn">Cart</a>
 </nav>
 
 <div class="wrapper">
@@ -25,237 +25,130 @@
         <p>Showing 12 results</p>
     </div>
 
-    <div class="layout">
+    <div class="grid">
 
-        <aside class="sidebar">
-
-            <div class="filter-box">
-                <p class="filter-title">Categories</p>
-                <ul>
-                    <li><label><input type="checkbox" checked> Electronics</label></li>
-                    <li><label><input type="checkbox"> Clothing</label></li>
-                    <li><label><input type="checkbox"> Home &amp; Kitchen</label></li>
-                    <li><label><input type="checkbox"> Sports</label></li>
-                    <li><label><input type="checkbox"> Books</label></li>
-                </ul>
-            </div>
-
-            <div class="filter-box">
-                <p class="filter-title">Price Range</p>
-                <input type="range" min="0" max="5000" value="3500">
-                <div class="price-row">
-                    <span>&#8377;0</span>
-                    <span>&#8377;3500</span>
-                </div>
-            </div>
-
-            <div class="filter-box">
-                <p class="filter-title">Rating</p>
-                <label><input type="radio" name="rating" checked> &#9733;&#9733;&#9733;&#9733;&#9733; 5 star</label>
-                <label><input type="radio" name="rating"> &#9733;&#9733;&#9733;&#9733;&#9734; 4 &amp; above</label>
-                <label><input type="radio" name="rating"> &#9733;&#9733;&#9733;&#9734;&#9734; 3 &amp; above</label>
-            </div>
-
-            <div class="filter-box">
-                <p class="filter-title">Brand</p>
-                <ul>
-                    <li><label><input type="checkbox" checked> Apple</label></li>
-                    <li><label><input type="checkbox"> Samsung</label></li>
-                    <li><label><input type="checkbox"> Nike</label></li>
-                    <li><label><input type="checkbox"> Sony</label></li>
-                </ul>
-            </div>
-
-        </aside>
-
-        <div class="products-area">
-            <div class="topbar">
-                <span>12 Products found</span>
-                <select>
-                    <option>Sort: Featured</option>
-                    <option>Price: Low to High</option>
-                    <option>Price: High to Low</option>
-                    <option>Newest First</option>
-                    <option>Top Rated</option>
-                </select>
-            </div>
-
-            <div class="grid">
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="watch">
-                        <span class="badge sale">Sale</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Electronics</span>
-                        <p class="name">Smart Watch Pro</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(128)</span></div>
-                        <div class="price"><span class="cur">&#8377;1,999</span> <span class="old">&#8377;2,999</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=220&fit=crop" alt="headphones">
-                        <span class="badge new">New</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Electronics</span>
-                        <p class="name">Wireless Headphones</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(96)</span></div>
-                        <div class="price"><span class="cur">&#8377;3,499</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=220&fit=crop" alt="shoes">
-                        <span class="badge sale">Sale</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Sports</span>
-                        <p class="name">Nike Air Max Shoes</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(214)</span></div>
-                        <div class="price"><span class="cur">&#8377;2,799</span> <span class="old">&#8377;3,999</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400&h=220&fit=crop" alt="perfume">
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Beauty</span>
-                        <p class="name">Perfume 100ml</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(67)</span></div>
-                        <div class="price"><span class="cur">&#8377;1,299</span> <span class="old">&#8377;1,699</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=220&fit=crop" alt="laptop">
-                        <span class="badge new">New</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Electronics</span>
-                        <p class="name">MacBook Air M3 Laptop</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(312)</span></div>
-                        <div class="price"><span class="cur">&#8377;89,999</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=220&fit=crop" alt="sunglasses">
-                        <span class="badge sale">Sale</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Clothing</span>
-                        <p class="name">Aviator Sunglasses</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(89)</span></div>
-                        <div class="price"><span class="cur">&#8377;4,499</span> <span class="old">&#8377;6,000</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=220&fit=crop" alt="camera">
-                        <span class="badge new">New</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Electronics</span>
-                        <p class="name">Instax Mini 12 Camera</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(155)</span></div>
-                        <div class="price"><span class="cur">&#8377;7,499</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400&h=220&fit=crop" alt="sneakers">
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Sports</span>
-                        <p class="name">Adidas Ultraboost Sneakers</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(203)</span></div>
-                        <div class="price"><span class="cur">&#8377;5,999</span> <span class="old">&#8377;7,499</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=220&fit=crop" alt="speaker">
-                        <span class="badge sale">Sale</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Electronics</span>
-                        <p class="name">JBL Flip 6 Speaker</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(178)</span></div>
-                        <div class="price"><span class="cur">&#8377;8,999</span> <span class="old">&#8377;11,000</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=220&fit=crop" alt="sofa">
-                        <span class="badge new">New</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Home &amp; Kitchen</span>
-                        <p class="name">3-Seater Sofa</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(42)</span></div>
-                        <div class="price"><span class="cur">&#8377;24,999</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=220&fit=crop" alt="phone">
-                        <span class="badge sale">Sale</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Electronics</span>
-                        <p class="name">Samsung Galaxy S24 Ultra</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(521)</span></div>
-                        <div class="price"><span class="cur">&#8377;72,999</span> <span class="old">&#8377;84,999</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=220&fit=crop" alt="backpack">
-                        <span class="badge new">New</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="cat">Clothing</span>
-                        <p class="name">Travel Backpack 40L</p>
-                        <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(73)</span></div>
-                        <div class="price"><span class="cur">&#8377;2,199</span> <span class="old">&#8377;2,999</span></div>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Electronics</span>
+                <p class="name">Smart Watch Pro</p>
+                <p class="price">Rs.1,999</p>
+                <button>Add to Cart</button>
             </div>
         </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Electronics</span>
+                <p class="name">Wireless Headphones</p>
+                <p class="price">Rs.3,499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Sports</span>
+                <p class="name">Nike Air Max Shoes</p>
+                <p class="price">Rs.2,799</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Beauty</span>
+                <p class="name">Perfume 100ml</p>
+                <p class="price">Rs.1,299</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Electronics</span>
+                <p class="name">MacBook Air M3 Laptop</p>
+                <p class="price">Rs.89,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Clothing</span>
+                <p class="name">Aviator Sunglasses</p>
+                <p class="price">Rs.4,499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Electronics</span>
+                <p class="name">Instax Mini 12 Camera</p>
+                <p class="price">Rs.7,499</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Sports</span>
+                <p class="name">Adidas Ultraboost Sneakers</p>
+                <p class="price">Rs.5,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Electronics</span>
+                <p class="name">JBL Flip 6 Speaker</p>
+                <p class="price">Rs.8,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Home & Kitchen</span>
+                <p class="name">3-Seater Sofa</p>
+                <p class="price">Rs.24,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Electronics</span>
+                <p class="name">Samsung Galaxy S24 Ultra</p>
+                <p class="price">Rs.72,999</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=220&fit=crop" alt="product">
+            <div class="card-body">
+                <span class="cat">Clothing</span>
+                <p class="name">Travel Backpack 40L</p>
+                <p class="price">Rs.2,199</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
     </div>
 </div>
-
-<footer>
-    &copy; 2026 my shop
-</footer>
 
 </body>
 </html>
