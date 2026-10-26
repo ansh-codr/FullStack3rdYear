@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="box">
+        <h1>JS Quiz Arena</h1>
+        <section id="quiz">
+            <div class="top">
+                <span id="number"></span>
+                <span>Score: <b id="score">0</b></span>
+            </div>
+            <div class="line"><i id="progress"></i></div>
+            <div class="timer">Time: <b id="time">30</b>s</div>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="explanation"></p>
+            <button id="next">Next</button>
+        </section>
+        <section id="result" class="hide">
+            <h2>Quiz Complete</h2>
+            <p>Your score is <b id="finalScore"></b></p>
+            <p id="rating"></p>
+            <button id="restart">Restart</button>
+            <button id="review">Review Wrong Answers</button>
+        </section>
+        <section id="reviewBox" class="hide">
+            <h2>Wrong Answers</h2>
+            <div id="wrongAnswers"></div>
+            <button id="again">Try Again</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

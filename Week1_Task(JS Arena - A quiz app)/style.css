@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #eef2ff;
+    color: #172554;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px
+}
+
+.box {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px #17255422
+}
+
+h1 {
+    text-align: center;
+    color: #4338ca;
+    margin-top: 0
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 12px
+}
+
+.line {
+    height: 9px;
+    background: #e0e7ff;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.line i {
+    display: block;
+    width: 10%;
+    height: 100%;
+    background: #6366f1;
+    transition: width .3s
+}
+
+.timer {
+    text-align: right;
+    margin: 16px 0;
+    color: #475569
+}
+
+h2 {
+    line-height: 1.4
+}
+
+#options {
+    display: grid;
+    gap: 12px
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    padding: 13px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #4f46e5;
+    color: #fff
+}
+
+#options button {
+    text-align: left;
+    background: #f1f5f9;
+    color: #172554;
+    border: 2px solid #e2e8f0
+}
+
+#options button:hover {
+    border-color: #6366f1
+}
+
+#options button.correct {
+    background: #bbf7d0;
+    border-color: #16a34a;
+    color: #14532d
+}
+
+#options button.wrong {
+    background: #fecaca;
+    border-color: #dc2626;
+    color: #7f1d1d
+}
+
+button:disabled {
+    cursor: not-allowed
+}
+
+#next {
+    display: block;
+    margin: 20px 0 0 auto
+}
+
+#explanation {
+    min-height: 24px;
+    color: #475569
+}
+
+.hide {
+    display: none
+}
+
+.wrongItem {
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    background: #fff1f2;
+    border-left: 4px solid #ef4444
+}
+
+.wrongItem p {
+    margin: 7px 0
+}
+
+#result,
+#reviewBox {
+    text-align: center
+}
+
+#wrongAnswers {
+    text-align: left
+}
+
+@media(max-width:500px) {
+    .box {
+        padding: 20px
+    }
+
+    h1 {
+        font-size: 28px
+    }
+}
