@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #222
+}
+
+.page {
+    max-width: 1000px;
+    margin: auto
+}
+
+h1 {
+    text-align: center
+}
+
+.checkout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px
+}
+
+section {
+    background: white;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 6px
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    gap: 15px
+}
+
+.product:last-child {
+    border-bottom: 0
+}
+
+.productName {
+    flex: 1
+}
+
+.productName b {
+    display: block;
+    margin-bottom: 6px
+}
+
+.price {
+    width: 75px
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.quantity button,
+.addButton,
+.removeButton,
+#apply {
+    border: 1px solid #aaa;
+    background: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px
+}
+
+.quantity span {
+    min-width: 20px;
+    text-align: center
+}
+
+.removeButton {
+    color: #b00020
+}
+
+.suggested {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin: 10px 0
+}
+
+.summary {
+    height: max-content
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0
+}
+
+.total {
+    font-size: 20px
+}
+
+.discountBox {
+    display: flex;
+    gap: 8px;
+    margin-top: 22px
+}
+
+#coupon {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px
+}
+
+#apply {
+    background: #333;
+    color: white
+}
+
+#message {
+    font-size: 14px;
+    min-height: 18px
+}
+
+.checkoutButton {
+    width: 100%;
+    padding: 12px;
+    background: #1769aa;
+    border: 0;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+@media(max-width:700px) {
+    .checkout {
+        grid-template-columns: 1fr
+    }
+
+    .product {
+        align-items: flex-start;
+        flex-wrap: wrap
+    }
+
+    .price {
+        width: auto
+    }
+}

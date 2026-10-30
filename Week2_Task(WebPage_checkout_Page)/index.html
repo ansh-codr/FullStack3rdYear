@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page">
+        <h1>Checkout</h1>
+        <div class="checkout">
+            <section>
+                <h2>Your Products</h2>
+                <div id="products"></div>
+                <h2>Suggested Products</h2>
+                <div id="suggested"></div>
+            </section>
+            <section class="summary">
+                <h2>Checkout Summary</h2>
+                <div class="row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+                <div class="row"><span>Discount</span><span id="discount">-$0.00</span></div>
+                <div class="row"><span>Delivery</span><span id="delivery">$5.00</span></div>
+                <hr>
+                <div class="row total"><b>Total</b><b id="total">$0.00</b></div>
+                <div class="discountBox">
+                    <input id="coupon" type="text" placeholder="Discount code">
+                    <button id="apply">Apply</button>
+                </div>
+                <p id="message"></p>
+                <button class="checkoutButton">Proceed to Checkout</button>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
